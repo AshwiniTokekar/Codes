@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1418027305 source:/home/ashwini/M.tech/Coding competiton/practice/SPOJ/practice/main.cpp
+
+1418030356 source:/home/ashwini/M.tech/Coding competiton/practice/SPOJ/practice/onp.cpp
+	<stack>
+	<cstring>
+
+1418030800 source:/home/ashwini/M.tech/Coding competiton/practice/SPOJ/practice/factorial.cpp
+
+1418033486 source:/home/ashwini/M.tech/Coding competiton/practice/SPOJ/practice/smallfactorial.cpp
+
+1418042138 source:/home/ashwini/M.tech/Coding competiton/practice/SPOJ/practice/aadrev.cpp
+	<stack>
+	<queue>
+
+1418205454 source:/home/ashwini/M.tech/Coding competiton/practice/SPOJ/practice/palin.cpp
+	<vector>
+	<algorithm>
+	<string>
+
+1418207097 source:/home/ashwini/M.tech/Coding competiton/practice/SPOJ/practice/nsteps.cpp
+
+1418208596 source:/home/ashwini/M.tech/Coding competiton/practice/SPOJ/practice/SAMER08F.cpp
+
+1418210616 source:/home/ashwini/M.tech/Coding competiton/practice/SPOJ/practice/TOANDFRO.cpp
+
+1418212184 source:/home/ashwini/M.tech/Coding competiton/practice/SPOJ/practice/ACPC10A.cpp
+
+1418212767 source:/home/ashwini/M.tech/Coding competiton/practice/SPOJ/practice/CANDY.cpp
+
+1418212752 source:/home/ashwini/M.tech/Coding competiton/practice/SPOJ/practice/FASHION.cpp
+	<iostream>
+

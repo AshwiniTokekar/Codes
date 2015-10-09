@@ -1,0 +1,16 @@
+# include <iostream>
+# include <stack>
+int main()
+{
+   stack <char> rpn;
+   char inp[450];
+   char opt[450];
+   int nos;
+   cin>>nos;
+   for(int i=0;i<nos;i++)
+   {
+      cin>>inp;
+
+   }
+   return 0;
+}
