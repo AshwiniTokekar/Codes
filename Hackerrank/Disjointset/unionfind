@@ -1,0 +1,77 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int com[100010];
+int size[100010];
+int rank_c[100010];
+void initialize()
+    {
+       for(int i=0;i<100010;i++)
+       {
+           com[i]=i;
+           size[i]=1;
+           rank_c[i]=1;
+       }    
+}
+int find(int n)
+    {
+      int temp=n;
+      while(com[n]!=n)
+      {
+          n=com[n];
+      }    
+      com[temp]=com[n];
+      return com[n];
+    }
+void union_com(int num1,int num2,int N)
+    {
+       int c1=find(num1),c2=find(num2);
+       if(c1==c2)
+             return;
+       if(rank_c[c1]<rank_c[c2])
+           {
+           com[c1]=c2;
+           size[c2]+=size[c1];
+           }
+       else
+           {
+            com[c2]=c1;
+            size[c1]+=size[c2];
+            if(rank_c[c1]==rank_c[c2])
+                 rank_c[c1]++;
+       }
+      
+    }
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int N,Q;
+    initialize();
+    cin>>N>>Q;
+    char type;
+    int num1,num2;
+    for(int i=0;i<Q;i++)
+        {
+          cin>>type;
+          if(type=='M')
+            {
+          //    cout<<"in merge\n";
+               cin>>num1>>num2;
+               union_com(num1,num2,N);
+        //      cout<<num1<<" "<<size[num1]<<"\n";
+            }
+        else
+          {
+            cin>>num1;
+            num2=find(num1);
+         //   cout<<num2<<" "<<size[num2]<<"\n";
+           cout<<size[num2]<<"\n";
+          }
+            
+        
+    }
+    return 0;
+}
