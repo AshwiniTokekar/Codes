@@ -30,7 +30,7 @@ void Graph::addEdge(int v,int w)
    adjlist[w].push_back(v);
 }
 
-void Graph:: BFS(int s)
+void Graph::BFS(int s)
 {
    vector<bool>visited(V+1,false);
    queue<int>q;

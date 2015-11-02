@@ -39,6 +39,8 @@ void Graph::addedge(int u,int v,int w)
   n.end=u;
   g[v].push_back(n);
 }
+//nodex=heap array
+//dist=final array
 vector<int> Graph::dijkstra(int src)
 {
    vector<bool>visited(V,false);

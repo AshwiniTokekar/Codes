@@ -5,8 +5,10 @@ using namespace std;
 vector<int>parent;
 int getparent(int v)
 {
+	int temp=v;
   while(parent[v]!=v)
     v=parent[v];
+  parent[temp]=v;
   return v;
 }
 
