@@ -1,7 +1,7 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 #include <list>
-#include<climits>
+#include <climits>
 using namespace std;
 struct node
 {
